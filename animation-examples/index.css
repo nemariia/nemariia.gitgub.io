@@ -1,0 +1,49 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: silver;
+	text-align: center;
+	scroll-behavior: smooth;
+}
+
+.screen {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	font-size: 3em;
+}
+
+#note {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	font-size: 1.5em;
+	color: yellow;
+	text-shadow: 0px 0px 3px white;
+	text-transform: uppercase;
+	animation-name: jump;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+	animation-timing-function: cubic-bezier(0.0, 0.3, 0.3, 1.0);
+}
+
+@keyframes jump {
+  0% {
+  	bottom: 0;
+  }
+  93% {
+  	bottom: 0;
+  }
+  96% {
+  	bottom: 3%;
+  }
+  100% {
+  	bottom: 0;
+  }
+}
